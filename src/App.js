@@ -64,6 +64,7 @@ const App = () => {
                      <Navbar />
                   </div>
                   <div>
+                     <ThemeSettings />
                      <Routes>
                         {/* Dashbpard */}
                         <Route path='/' element={<Ecommerce />} />
