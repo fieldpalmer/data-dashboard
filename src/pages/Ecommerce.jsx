@@ -27,31 +27,18 @@ const Ecommerce = () => {
               <p className="font-bold text-gray-400">Earnings</p>
               <p className="text-2xl">$63,448.78</p>
             </div>
-            <button
-              type="button"
-              style={{ backgroundColor: currentColor }}
-              className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4"
-            >
+            <button type="button" style={{ backgroundColor: currentColor }} className="text-2xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full  p-4">
               <BsCurrencyDollar />
             </button>
           </div>
           <div className="mt-6">
-            <Button
-              color="white"
-              bgColor={currentColor}
-              text="Download"
-              borderRadius="10px"
-            />
+            <Button color="white" bgColor={currentColor} text="Download" borderRadius="10px" />
           </div>
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
             <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
-              <button
-                type="button"
-                style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-                className="text-2xl opacity-0.9 rounded-full  p-4 hover:drop-shadow-xl"
-              >
+              <button type="button" style={{ color: item.iconColor, backgroundColor: item.iconBg }} className="text-2xl opacity-0.9 rounded-full  p-4 hover:drop-shadow-xl">
                 {item.icon}
               </button>
               <p className="mt-3">
@@ -106,12 +93,7 @@ const Ecommerce = () => {
                 <SparkLine currentColor={currentColor} id="line-sparkLine" type="Line" height="80px" width="250px" data={SparklineAreaData} color={currentColor} />
               </div>
               <div className="mt-10">
-                <Button
-                  color="white"
-                  bgColor={currentColor}
-                  text="Download Report"
-                  borderRadius="10px"
-                />
+                <Button color="white" bgColor={currentColor} text="Download Report" borderRadius="10px" />
               </div>
             </div>
             <div>
@@ -120,13 +102,9 @@ const Ecommerce = () => {
           </div>
         </div>
         <div>
-          <div
-            className=" rounded-2xl md:w-400 p-4 m-3"
-            style={{ backgroundColor: currentColor }}
-          >
+          <div className=" rounded-2xl md:w-400 p-4 m-3" style={{ backgroundColor: currentColor }}>
             <div className="flex justify-between items-center ">
               <p className="font-semibold text-white text-2xl">Earnings</p>
-
               <div>
                 <p className="text-2xl text-white font-semibold mt-8">$63,448.78</p>
                 <p className="text-gray-200">Monthly revenue</p>
@@ -161,14 +139,7 @@ const Ecommerce = () => {
             {recentTransactions.map((item) => (
               <div key={item.title} className="flex justify-between mt-4">
                 <div className="flex gap-4">
-                  <button
-                    type="button"
-                    style={{
-                      color: item.iconColor,
-                      backgroundColor: item.iconBg,
-                    }}
-                    className="text-2xl rounded-lg p-4 hover:drop-shadow-xl"
-                  >
+                  <button type="button" style={{color: item.iconColor, backgroundColor: item.iconBg }} className="text-2xl rounded-lg p-4 hover:drop-shadow-xl" >
                     {item.icon}
                   </button>
                   <div>
@@ -182,12 +153,7 @@ const Ecommerce = () => {
           </div>
           <div className="flex justify-between items-center mt-5 border-t-1 border-color">
             <div className="mt-3">
-              <Button
-                color="white"
-                bgColor={currentColor}
-                text="Add"
-                borderRadius="10px"
-              />
+              <Button color="white" bgColor={currentColor} text="Add" borderRadius="10px" />
             </div>
 
             <p className="text-gray-400 text-sm">36 Recent Transactions</p>
