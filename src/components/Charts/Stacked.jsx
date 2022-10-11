@@ -9,7 +9,7 @@ const Stacked = ({ width, height }) => {
 
   return (
     <ChartComponent
-      id="charts"
+      id="charts-stacked-chart"
       primaryXAxis={stackedPrimaryXAxis}
       primaryYAxis={stackedPrimaryYAxis}
       width={width}
