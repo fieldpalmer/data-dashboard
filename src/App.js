@@ -45,7 +45,6 @@ const App = () => {
                      </button>
                   </TooltipComponent>
                </div>
-
                {/* sidebar action */}
                {activeMenu ? (
                   <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
@@ -56,7 +55,6 @@ const App = () => {
                      <Sidebar /> w-0
                   </div>
                )}
-
                {/* navbar items */}
                <div
                   className={`dark:bg-main-bg bg-main-bg min-h-screen w-full 
